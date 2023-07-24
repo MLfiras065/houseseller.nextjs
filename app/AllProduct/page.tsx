@@ -101,7 +101,29 @@ const AllProduct = () => {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
- 
+  const handleImageUpload = async (e) => {
+    const file = e.target.files[0];
+    setImage(file);
+
+    const formData = new FormData();
+    formData.append("file", file);
+    formData.append("upload_preset", "product");
+    
+    try {
+      const response = await axios.post(
+      
+        "https://api.cloudinary.com/v1_1/dzonlv8oi/image/upload",
+
+        formData
+      );
+
+      console.log("Image uploaded successfully:", response.data);
+      setImage(response.data.secure_url);
+    } catch (error) {
+      console.error("Error uploading image:", error);
+    }
+  };
+  
   useEffect(() => {
     fetch();
   }, []);
@@ -173,7 +195,9 @@ const AllProduct = () => {
            
           </div>
           <div>
-            <input type="text" placeholder="image" value={image} onChange={(e) => setImage(e.target.value)} />
+          <label  className="form-label"> Image</label>
+            <input type="file" className="form-control" name="UrunImage" id="UrunImage"
+            onChange={handleImageUpload}/>
           </div>
           <div>
             location:
@@ -214,7 +238,7 @@ const AllProduct = () => {
         <DialogActions>
           <Button onClick={handleClose}>Cancel</Button>
           <Button onClick={() => handlUp(el.id)}>Update</Button>
-          <Button onClick={() => deleteHome(el.id)}>Delete</Button>
+          
         </DialogActions>
       </Dialog>
       <button onClick={() => deleteHome(el.id)}>delete</button>
