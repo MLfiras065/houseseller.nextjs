@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+body{
+    background:linear-gradient(134deg, #984D38 0%, #181E41 63.29%);
+    background-repeat: no-repeat;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 3.5;
+        letter-spacing: 0.00938em;
+       
+}
+.navBar{
+  margin: 1.5rem 0;
+  display: flex;
+  padding: 30px 0 10px;
+  align-items: baseline;
+  background: transparent;
+  color: white;
+  font-family: Helvetica;
+  font-weight: 400;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+#form {
+  background-color: #EEF7F1;
+}
+
+#Kategori {
+  height: 38px;
+  border: 1px solid #CED4D9;
+  border-radius: 3px;
+}
+
+#ekleButton:hover {
+  box-shadow: -1px 1px 17px 0px rgba(0,0,0,0.75);
+}
+
+
+
+li {
+  margin-right: 3.5em;
+
+}
+
+li:hover {
+  box-shadow: -1px 1px 17px 0px rgba(0,0,0,0.75);
+  
+}
+
+input:hover {
+  border-color: rgb(106, 161, 143);
+}
+
+#loginform {
+  border: 10px solid gray;
+  background-color: rgb(199, 194, 194);
+  opacity: 0.8;
+}
+
+#adminbody {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(89,44,111,1) 46%, rgba(98,29,93,1) 98%);
+}
+
+#invalidlogin {
+  display: none;
+}
+#loginbutton {
+  position: absolute;
+  left: 44.5%;
+  top: 430px;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  margin-top: 12px;
+  display: inline-block;
+  padding-left: 2em;
+  text-align: center;
+}
+li a {
+  font-size: larger;
+  color: black;
+  text-decoration: none;
+  border: 1px solid grey;
+  border-radius: 0.5em;
+  padding: 8px;
+}
+
+li a:hover {
+  font-size: x-large;
+}
+.position {
+  margin-left: 10em;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color:rgb(0, 0, 0);
+}
+
+  .button{
+    color:black
+  }
+  .title{
+    color: white;
+  }
+  .about{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .t1{
+    color:white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+ 
+  .p2{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  .P3{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .T3{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .t2{
+    color:white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  .T4{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .P4{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .admin{
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    border: 7px solid #8f8f8fa6;
+    padding: 50px;
+    border-radius: 50px;
+  }
